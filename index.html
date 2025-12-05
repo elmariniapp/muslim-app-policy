@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,83 +7,141 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 20px;
-            line-height: 1.6;
-            color: #222;
+            margin: 0;
+            padding: 40px;
+            background: #f7f7f7;
+            color: #333;
+            line-height: 1.7;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            border: 1px solid #ddd;
         }
         h1, h2 {
-            color: #0D3B2A;
+            color: #222;
         }
-        a { color: #15C57E; }
-        .footer {
+        .lang-switch {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+        .lang-switch button {
+            padding: 6px 12px;
+            border: 1px solid #999;
+            background: #fff;
+            cursor: pointer;
+            border-radius: 6px;
+            margin-left: 10px;
+        }
+        .section {
+            display: none;
+        }
+        .section.active {
+            display: block;
+        }
+        footer {
             margin-top: 40px;
             font-size: 14px;
-            color: #777;
             text-align: center;
+            color: #777;
         }
     </style>
 </head>
+
 <body>
 
-<h1>Privacy Policy – Muslim App</h1>
-<p><strong>Last updated:</strong> 2025-12-05</p>
+<div class="container">
 
-<p>Muslim App fully respects your privacy and is committed to protecting your personal data. 
-This Privacy Policy explains what information is collected, how it is used, and your rights under GDPR and Google Play requirements.</p>
+    <div class="lang-switch">
+        <button onclick="switchLang('fr')">🇫🇷 Français</button>
+        <button onclick="switchLang('en')">🇬🇧 English</button>
+    </div>
 
-<h2>1. Information We Collect</h2>
-<p>Muslim App does <strong>not</strong> collect, store, transmit, or share any personal data on external servers.
-All data remains <strong>only on your device</strong>.</p>
+    <!-- ----------------- FRENCH VERSION ----------------- -->
+    <div id="fr" class="section active">
 
-<h3>Local Data (stored on your device only)</h3>
-<ul>
-    <li>App settings (theme, language, font size)</li>
-    <li>Prayer calculation method</li>
-    <li>Reading progress (surahs read, last position)</li>
-    <li>Favorites & saved duas</li>
-    <li>User onboarding choices</li>
-</ul>
+        <h1>Politique de Confidentialité – Muslim App</h1>
+        <p><strong>Développeur :</strong> EL MARINI APP — Muslim App Developer</p>
+        <p><strong>Dernière mise à jour :</strong> 2025</p>
 
-<h3>Optional Data (only if enabled)</h3>
-<ul>
-    <li>Approximate location (Qibla, nearby mosques)</li>
-    <li>Notifications (prayer reminders)</li>
-</ul>
+        <h2>1. Introduction</h2>
+        <p>Muslim App respecte votre vie privée et protège vos données personnelles conformément au RGPD et aux règles Google Play.</p>
 
-<h2>2. How Your Data Is Used</h2>
-<p>Your data is used only to provide core app features: prayer times, Qibla direction, reading progress, and notifications.</p>
+        <h2>2. Données collectées</h2>
+        <p>L’application collecte uniquement ce qui est nécessaire à son fonctionnement :</p>
+        <ul>
+            <li>Préférences locales (thème, langue, réglages)</li>
+            <li>Historique de lecture du Coran</li>
+            <li>Favoris et progression</li>
+        </ul>
+        <p>Aucune donnée n’est envoyée à un serveur externe.</p>
 
-<h2>3. Data Sharing</h2>
-<p>Muslim App does not share any data with third parties.</p>
+        <h2>3. Localisation</h2>
+        <p>La localisation est utilisée uniquement si vous activez la Qibla ou la recherche de mosquées.</p>
 
-<h2>4. App Permissions</h2>
-<p><strong>Location:</strong> used only for prayer times, Qibla, and mosques. Never stored nor transmitted.</p>
-<p><strong>Notifications:</strong> used only for reminders.</p>
+        <h2>4. Notifications</h2>
+        <p>Servent uniquement pour les rappels de prières (si activés).</p>
 
-<h2>5. Data Security</h2>
-<p>All data stays locally stored on your device.</p>
+        <h2>5. Aucune publicité / aucun tracking</h2>
+        <p>Aucune donnée n’est vendue ou partagée.</p>
 
-<h2>6. Your Rights (GDPR)</h2>
-<ul>
-    <li>Right of access</li>
-    <li>Right to delete</li>
-    <li>Right to withdraw consent</li>
-</ul>
+        <h2>6. Vos droits</h2>
+        <p>Vous pouvez supprimer vos données locales ou retirer vos permissions à tout moment.</p>
 
-<h2>7. Children’s Privacy</h2>
-<p>No data is collected from children.</p>
+        <h2>7. Contact</h2>
+        <p>Email : <a href="mailto:support@elmariniapp.com">support@elmariniapp.com</a></p>
+    </div>
 
-<h2>8. Changes to This Policy</h2>
-<p>Updates will be displayed within the app.</p>
+    <!-- ----------------- ENGLISH VERSION ----------------- -->
+    <div id="en" class="section">
 
-<h2>9. Contact</h2>
-<p>Email: <a href="mailto:support@elmariniapp.com">support@elmariniapp.com</a></p>
+        <h1>Privacy Policy – Muslim App</h1>
+        <p><strong>Developer:</strong> EL MARINI APP — Muslim App Developer</p>
+        <p><strong>Last updated:</strong> 2025</p>
 
-<div class="footer">
-    Muslim App © 2025 – All rights reserved.
+        <h2>1. Introduction</h2>
+        <p>Muslim App respects your privacy and processes your data in accordance with GDPR and Google Play policies.</p>
+
+        <h2>2. Data collected</h2>
+        <p>The app only stores what is required for its features:</p>
+        <ul>
+            <li>Local preferences (theme, language, settings)</li>
+            <li>Quran reading history</li>
+            <li>Favorites and progress</li>
+        </ul>
+        <p>No data is transmitted to external servers.</p>
+
+        <h2>3. Location</h2>
+        <p>Used only if you enable Qibla orientation or nearby mosque search.</p>
+
+        <h2>4. Notifications</h2>
+        <p>Used only to remind prayer times (if enabled).</p>
+
+        <h2>5. No ads / no tracking</h2>
+        <p>No data is sold or shared.</p>
+
+        <h2>6. Your rights</h2>
+        <p>You may delete your local data or revoke permissions at any time.</p>
+
+        <h2>7. Contact</h2>
+        <p>Email: <a href="mailto:support@elmariniapp.com">support@elmariniapp.com</a></p>
+    </div>
+
 </div>
+
+<footer>
+    © 2025 EL MARINI APP — Muslim App Developer
+</footer>
+
+<script>
+function switchLang(lang) {
+    document.querySelectorAll('.section').forEach(sec => sec.classList.remove('active'));
+    document.getElementById(lang).classList.add('active');
+}
+</script>
 
 </body>
 </html>
